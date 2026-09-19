@@ -303,3 +303,12 @@ Track monthly SLA, resolution time, workload intensity, and staffing indicators 
 This project demonstrates an end-to-end analytical workflow, from understanding a business problem and validating messy data to preparing an analytical model and communicating findings through a Power BI dashboard.
 
 AI tools were used as a learning and productivity aid during development. SQL queries, validation results, cleaning decisions, and analytical conclusions were reviewed and tested against the dataset.
+
+## Data Source & Attribution
+
+The dataset used in this project is a **synthetic dataset generated with Anthropic's Claude** based on a fictional business scenario and requirements defined by the author. The dataset was subsequently reviewed, cleaned, and prepared for analysis as part of this project.
+
+No real customer, employee, or company data was used.
+
+> **Source:** Synthetic dataset generated with Anthropic Claude
+
