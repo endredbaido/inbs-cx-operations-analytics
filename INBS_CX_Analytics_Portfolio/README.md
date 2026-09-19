@@ -5,7 +5,7 @@
 ## Summary
 
 - **Problem:** Resolution SLA fell from **90.8% in Q1 2025 to 77.2% in Q4**.
-- **Main finding:** The decline is a **resolution problem**, not a response problem, and it appears across teams and shifts rather than in one isolated area.
+- **Main finding:** The decline is a **resolution problem**, not a response problem. It appears in all seven established teams and continues steadily even when the new client (CL09) is excluded, so it is not isolated to one team or account.
 - **Top recommendation:** Investigate the resolution stage (approvals, escalations, reassignments), align staffing with ticket volume, and monitor SLA monthly.
 
 ![CX Operations Dashboard](dashboard/dashboard/INBS_CX_Operations_Overview.png)
@@ -105,7 +105,7 @@ Each ticket has two deadlines:
 - **Resolution SLA:** Was the ticket resolved within the target time?
 - **Overall SLA:** Did the ticket meet **both** deadlines? This is the strictest measure.
 
-SLA % = tickets that met the target ÷ tickets that could be evaluated. Quarters are based on ticket **[creation date / resolution date]**.
+SLA % = tickets that met the target ÷ tickets that could be evaluated. Quarters are based on ticket **creation date**.
 
 ### SLA rules represented in the dataset
 
@@ -217,14 +217,23 @@ The single-page dashboard summarizes CX performance and changes throughout 2025.
 | Overall SLA (both targets met) | 70.13% | 56.42% | -13.71 percentage points |
 | Average Resolution Time | 814.59 min | 1,096.63 min | +34.6% |
 
+### Resolution SLA excluding CL09
+
+| Quarter | Resolution SLA |
+|---|---:|
+| Q1 | 90.83% |
+| Q2 | 86.09% |
+| Q3 | 82.42% |
+| Q4 | 78.50% |
+
 ### Interpretation
 
 1. Resolution SLA is the main deterioration: it fell from 90.83% to 77.18%. This closely matches management's reported decline (roughly 91% to the mid-70s).
 2. Resolution declined much more than first response (-13.65 vs -3.89 points). The drop in Overall SLA is almost entirely driven by resolution.
 3. Average resolution time increased by 34.6%, supporting the finding that tickets were taking longer to resolve.
 4. Workload intensity (tickets per scheduled agent-hour, by team-month) had a moderate negative association with SLA (r = **[x]**, n = **[y]**) and a moderate positive association with resolution time.
-5. CL09's ticket share increased during the year, suggesting additional workload pressure, but non-CL09 operations also deteriorated.
-6. **[X of 8]** teams and **[all]** shifts declined, so the evidence does not support blaming one isolated team or shift.
+5. CL09 (EskwelaHub Learning, a Platinum EdTech client, contract start April 7, 2025) is supported by T08, the New Accounts Team formed on March 10, 2025. T08 recorded the lowest Q4 Resolution SLA of any team (69.73%). However, excluding CL09, the overall decline is 12.33 points instead of 13.65, so CL09 explains only a small part of the deterioration.
+6. Excluding CL09, Resolution SLA still fell by roughly 4 points every quarter (90.83% to 78.50%). All seven established teams (T01 to T07) declined by about 10 to 15 percentage points. T08 is excluded from the Q1-to-Q4 team comparison because it had only 3 evaluable tickets in Q1. **[Shift result: e.g., "All four shifts also declined."]** The evidence therefore does not support blaming one isolated team or account.
 7. System migration is contextual information, not proven causation, because the source system and time period are confounded.
 
 ### Analytical caution
@@ -249,9 +258,9 @@ Compare ticket volume and workload intensity against staffing availability, abse
 
 Investigate whether particular clients have stricter targets, approval delays, complex workflows, or higher reassignment rates.
 
-### 4. Review CL09 onboarding impact
+### 4. Review CL09 onboarding and T08 performance
 
-Assess whether the growing CL09 volume affected staffing, training, queue allocation, or operational capacity.
+Assess whether T08's low Q4 result reflects the strict Platinum targets, new-team ramp-up, or capacity, training, and queue-allocation gaps.
 
 ### 5. Improve data-quality monitoring
 
@@ -280,6 +289,8 @@ Track monthly SLA, resolution time, workload intensity, and staffing indicators 
 
 - The dataset is fictional.
 - Management's reported decline (roughly 91% to the mid-70s) reconciles closely with the validated Resolution SLA (90.8% to 77.2%). Overall SLA is a stricter both-targets measure and is reported separately.
+- T08 had only 3 evaluable tickets in Q1 2025, so its Q1-to-Q4 change is not meaningful and is excluded from the team comparison.
+- Client attributes are taken from `dim_clients`, which lists CL09 as an EdTech client. The dataset's business context describes the April 2025 client as fintech, so the two sources are inconsistent.
 - Correlation does not establish causation.
 - Some records remain unevaluable because of missing client information, missing applicable policies, or unavailable duration data.
 - Staffing analysis is limited by the available fields and does not establish causal impact.
