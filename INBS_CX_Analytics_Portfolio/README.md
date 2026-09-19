@@ -181,22 +181,22 @@ The single-page dashboard summarizes CX performance and changes throughout 2025.
 1. **Monthly Overall SLA Trend**  
    Shows how SLA performance changed throughout the year.
 
-   ![Monthly Overall SLA Trend](dashboard/monthly_overall_sla_trend.png)
+   ![Monthly Overall SLA Trend](dashboard/dashboard/monthly_overall_sla_trend.png)
 
 2. **Monthly Ticket Volume and SLA**  
    Compares ticket volume with SLA performance to identify possible workload patterns.
 
-   ![Monthly Ticket Volume and SLA](dashboard/monthly_ticket_volume_sla.png)
+   ![Monthly Ticket Volume and SLA](dashboard/dashboard/monthly_ticket_volume_sla.png)
 
 3. **SLA by Team**  
    Compares performance across operational teams.
 
-   ![SLA by Team](dashboard/sla_by_team.png)
+   ![SLA by Team](dashboard/dashboard/sla_by_team.png)
 
 4. **SLA by Client**  
    Highlights differences in SLA performance between clients.
 
-   ![SLA by Client](dashboard/sla_by_client.png)
+   ![SLA by Client](dashboard/dashboard/sla_by_client.png)
 
 > Note: An interactive Power BI link is not currently available.
 > The dashboard screenshot at the top of this README is provided for portfolio demonstration.
