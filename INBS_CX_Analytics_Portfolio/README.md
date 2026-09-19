@@ -10,7 +10,7 @@
 - **Main finding:** The decline is a **resolution problem**, not a response problem, and it appears across teams and shifts rather than in one isolated area.
 - **Top recommendation:** Investigate the resolution stage (approvals, escalations, reassignments), align staffing with ticket volume, and monitor SLA monthly.
 
-![CX Operations Dashboard](dashboard/INBS_CX_Operations_Overview.png)
+![CX Operations Dashboard](dashboard/dashboard/INBS_CX_Operations_Overview.png)
 
 ---
 
