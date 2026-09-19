@@ -2,8 +2,6 @@
 
 **A business-focused data analytics portfolio project investigating customer experience operations, SLA performance, resolution time, and operational trends.**
 
-> **Project status:** Portfolio project | 2025 fictional operational dataset | One-page Power BI dashboard
-
 ## Summary
 
 - **Problem:** Resolution SLA fell from **90.8% in Q1 2025 to 77.2% in Q4**.
@@ -80,8 +78,6 @@ Tools were selected according to the task. SQL was used for relational transform
 
 ## 5. Dataset Description
 
-The dataset represents a fictional 24/7 BPO customer experience operation.
-
 ### Main entities
 
 - Clients
@@ -120,8 +116,6 @@ SLA % = tickets that met the target ÷ tickets that could be evaluated. Quarters
 - Resolution thresholds vary by priority
 - Client tiers apply SLA multipliers
 - SLA policies are matched according to their effective dates
-
-> The dataset is fictional and intended for learning, portfolio demonstration, and analytical practice. It does not represent actual INBS company data.
 
 ---
 
